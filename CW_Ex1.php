@@ -32,7 +32,7 @@ $lastname = (isset($_POST['lastname'])) ? $_POST['lastname'] : "";
     if (isset($_POST['submit'])) {
       if ($firstname != "" && $lastname != "") {
         // Here  starts the loop
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 1; $i < 50; $i++) {
           echo "$i. $firstname $lastname, ";
         }
       } elseif ($firstname == "") {
